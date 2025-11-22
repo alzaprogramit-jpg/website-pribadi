@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Santri</title>
+    <!-- css utama -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <!-- gambar di folder img -->
+        <img src="../assets/img/logo-hsi.png" alt="Logo HSI" class="logo" />
+        <h1>Galeri Karya Santri</h1>
+        <p>Karya pertama: website Profile pribadi</p>
+        <nav>
+          <a href="index.html">Beranda</a>
+          <a href="profile.html">Biodata</a>
+          <a href="galeri.html" class="active">Galeri</a>
+          <a href="jadwal.html">Jadwal</a>
+          <a href="feedback.html">Feedback</a>
+        </nav>
+      </header>
+
+      <!-- Bfagian 1: Karya Desain -->
+      <section class="gallery-section">
+        <h2 class="judul">Karya Desain</h2>
+        <p>IT HSI BOARDING SCHOOL</p>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img src="../assets/img/lap-komputer.jpg" alt="lap komputer" />
+            <figcaption>Foto saat belajaat bersama di lap komputer</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="../assets/img/logo-hsi.png" alt="logo hsi" />
+            <figcaption>Darf awal desain logo profile</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="../assets/img/hasilcoding.png" alt="Hasil codingan" />
+            <figcaption>Tampilkan hasil Codingan HTML</figcaption>
+          </figure>
+
+          <!-- Tambah video pakai <video> -->
+          <figure class="gallery-card">
+            <video controls width="100%">
+              <source src="../assets/video/udin.mp4" type="video/mp4" />
+              Browser kamu tidak mendukung pemutar video.
+            </video>
+            <figcaption>Dokumentasi video singkat di asrama</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- bagian 2: karya video -->
+      <section class="video-section">
+        <h2 class="judul">Karya Video</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/BwtgSpwq8t0?si=ArHKTcUIVhv8YQdb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 HSI Boarding School Purworejo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

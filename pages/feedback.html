@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- gambar di folder img -->
+        <img src="../assets/img/logo-hsi.png" alt="Logo HSI" class="logo" />
+        <h1>Formulir Umpan Balik</h1>
+        <p>Kritik, Saran, Dan Masukan</p>
+        <nav>
+          <a href="index.html">Beranda</a>
+          <a href="profile.html">Biodata</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="jadwal.html">Jadwal</a>
+          <a href="feedback.html" class="active">Feedback</a>
+        </nav>
+      </header>
+      <section class="card">
+        <h2 class="judul">💬 Formulir Umpan Balik</h2>
+        <p>
+          Kami sangat menghargai setiap masukan, saran, dan kritik dari Anda.
+          Silakan isi formulir berikut dengan jujur dan bijak untuk membantu
+          pengembangan website profil santri ini.
+        </p>
+
+        <form>
+          <label for="nama">Nama Anda (Opsional):</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Tuliskan nama Anda di sini..."
+          />
+
+          <label for="email">Alamat Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="contoh: nama@email.com"
+            required
+          />
+
+          <label for="rating"
+            >Seberapa puas Anda dengan tampilan website ini? (1 - 10)</label
+          >
+          <input
+            type="number"
+            id="rating"
+            name="rating"
+            min="1"
+            max="10"
+            placeholder="Masukkan angka 1 hingga 10"
+            required
+          />
+
+          <label
+            >Apakah Anda akan merekomendasikan website ini kepada orang
+            lain?</label
+          >
+          <div>
+            <input
+              type="radio"
+              id="ya"
+              name="rekomendasi"
+              value="Ya"
+              required
+            />
+            <label for="ya">Ya, tentu saja</label>
+            <input
+              type="radio"
+              id="mungkin"
+              name="rekomendasi"
+              value="Mungkin"
+            />
+            <label for="mungkin">Mungkin saja</label>
+            <input type="radio" id="tidak" name="rekomendasi" value="Tidak" />
+            <label for="tidak">Belum tentu</label>
+          </div>
+
+          <label
+            >Bagian mana dari website ini yang paling menarik menurut
+            Anda?</label
+          >
+          <div>
+            <input type="checkbox" id="bio" name="topik" value="Biodata" />
+            <label for="bio">Biodata</label>
+            <input type="checkbox" id="jadwal" name="topik" value="Jadwal" />
+            <label for="jadwal">Jadwal</label>
+            <input type="checkbox" id="galeri" name="topik" value="Galeri" />
+            <label for="galeri">Galeri</label>
+          </div>
+
+          <label for="bidang"
+            >Bidang apa yang menurut Anda perlu dikembangkan lebih baik?</label
+          >
+          <select id="bidang" name="bidang" required>
+            <option value="">-- Pilih Bidang --</option>
+            <option value="desain">Desain Tampilan</option>
+            <option value="konten">Konten & Informasi</option>
+            <option value="navigasi">Kemudahan Navigasi</option>
+            <option value="aksesibilitas">Aksesibilitas Pengguna</option>
+          </select>
+
+          <label for="pesan">Tulis saran atau pesan Anda secara lengkap:</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="4"
+            placeholder="Ceritakan pengalaman Anda menggunakan website ini..."
+            required
+          ></textarea>
+
+          <div style="text-align: right; margin-top: 15px">
+            <button
+              type="reset"
+              class="button"
+              style="background-color: #6b7280"
+            >
+              Atur Ulang
+            </button>
+            <button type="submit" class="button active-btn">
+              Kirim Feedback
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2025 HSI Boarding School Purworejo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
